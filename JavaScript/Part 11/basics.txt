@@ -1,0 +1,13 @@
+-----Call Stack(a data structure that keep tracks of the function calls)----
+
+-stack(LIFO structure)
+-function Call
+-function calls store in the stack (internally)
+
+----Breakpoints(used for debugging and to see the execution sequence of functions)----
+
+-Go Live in index.html file and got to sources
+-then open call_stack.js 
+-then click the starting function(three()) to add breakpoint
+-then click step into next function call symbol(down arrow)
+-check call stack,return value,scope,variables etc

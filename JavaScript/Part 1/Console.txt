@@ -1,0 +1,6 @@
+- Jekono browser er jekono website a dhuke inspect kore console khule code korbo
+- Ai code permanent na
+- CTRL + L -> to clear the console
+- upward, downward key to return back previous codes
+- Console means javaScript
+- JavaScript follows REPL (Read-Evaluate-Print-Loop)

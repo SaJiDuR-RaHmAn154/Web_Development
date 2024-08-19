@@ -1,0 +1,179 @@
+console.log("getElementById");
+let obj = document.getElementById("spider");
+console.dir(obj) //returns image object
+console.dir(obj) //returns image object
+console.log(obj.src)//(prints source link)
+console.log(obj.id)//(id print korbe)
+
+// obj.src = "another link"//(then image ai manipulate hoye jabe)
+
+console.log("getElementByClassName");
+
+let images = document.getElementsByClassName("Old"); //storing the image object
+
+for (imge of images) { console.dir(imge); } //This will print images one after another
+console.log(images[1].src);//prints image source
+
+images[1].src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSait84NUKfqjJOgide_jpPbH32hr68vhkqny42wkl6Mw&s";//image change hoye spider man er image hoye jabe
+
+console.log("getElementsByTag");
+
+// j tag use kora hoy ni setar jonno empty collection return hobe
+let divs = document.getElementsByTagName("div");
+console.dir(divs);
+divs[0].innerText = "Changed divs";//changing inner text
+
+
+// Query Selectors (Quite similar to css selectors and more intuitive than js selectors) 
+// this is used to select single element(multiple exist korle first object ta return korbe)
+
+console.dir(document.querySelector('h1')); //selected the h1 element and returns h1 object
+
+console.dir(document.querySelector('#description')); //id select
+
+console.dir(document.querySelector('.Old')); //class select (first image select hobe)
+
+console.dir(document.querySelector('.box a')); //InnerText a boxLink lekha thakbe(first item select hoise)
+
+//All collection paoar jonno
+console.dir(document.querySelectorAll('.box a'));// whole anchor tag list peye jabo
+
+
+//  Using Properties and Methods
+
+// innerText (Shows the visible text contained in a node)
+// textContent (shows all the full text(visibility-none kora part o dekhabe))
+// innerHTML (shows the full markup(shows bold,italics,underline etc parts))
+
+let para = document.querySelector('p');
+console.log(para);
+console.dir(para);
+
+console.log(para.innerText);
+console.log(para.innerHTML);
+console.log(para.textContent);//newline,display:none sob kisu dekhabe(html file a ja ase sevabe dekhabe)
+
+//DOM Manipulation
+
+// para.innerText = "abvvfws"; //pura paragraph er vitor change hoye jabe
+// para.innerHTML ="Hi! I am <b>Peter parker</b>."// html tag er kaj o hoye jabe
+
+let Heading = document.querySelector('h1');
+
+// Heading.innerHTML = "<u>Spider Man</u>";
+Heading.innerHTML = `<u>${Heading.innerText}</u>`;//same as before
+
+
+// Attribute Manipulation (id,class,style,img,src)
+
+// obj.getAttribute(attr)  --getters
+// obj.setAttribute(attr,val) ---setters
+
+let img = document.querySelector('img');
+console.log(img);
+console.log(img.getAttribute('id'));
+img.setAttribute('id', 'mainImg'); // changed id (id changed korle css file er styling r thakbena)
+console.log(img.getAttribute('id'));
+// src,class sob kisui avabe change kora jabe
+
+console.log(img.getAttribute('class'));
+img.setAttribute('class', 'mainImg');
+console.log(img.getAttribute('class'));
+
+// Manipulating Style(used style property-we can use inline styles but not used in css file)
+// in JS we will use camel case for everything
+// style property use kore css file er property access kora jayna (sudhu inline style access kora jay)
+// this property is not used frequently
+
+console.log(img.style);
+console.log(Heading.style);
+// Heading.style.color = 'blue';
+Heading.style.backgroundColor = 'yellow';
+
+let links = document.querySelectorAll('.small');
+
+for (link of links) {
+    link.style.color = 'red';//div er anchor tag gular text red color er hobe
+    link.style.backgroundColor = 'aqua';
+}
+
+// classList property
+
+let img1 = document.querySelector('img');
+console.log(img.classList); //prints the classes list of img tag
+
+console.log(Heading.classList);// No classes yet
+Heading.classList.add('red'); //style.css er class red add korar sathe sathe styling o chang hoye jabe
+Heading.classList.add('align');
+console.log(Heading.classList);
+Heading.classList.remove('align');
+console.log(Heading.classList);//setAttribute diye akhane kaj kora jabena karon atar jonno class only akta thaka lagbe.Multiple thakle classList diye kaj korbo
+
+console.log(Heading.classList.contains('align'));
+console.log(Heading.classList.contains('red'));
+
+Heading.classList.toggle('align');//exist korto na add kore dise tai(korle delete kore dito)
+console.log(Heading.classList);
+
+
+// Navigation properties(parentElement,children,previousElementSibling/nextElementSibling)
+
+let h3 = document.querySelector('h3');
+
+console.log(h3.parentElement);
+console.log(h3.children);
+let ul = document.querySelector('ul');
+console.log(ul.children);
+console.log(ul.childElementCount);
+console.log(ul.children[1].nextElementSibling);
+console.log(ul.previousElementSibling);
+
+console.log(img1.previousElementSibling.style.color = 'green');//manipulation
+
+// Adding Elements in the document (DOM Manipulation)
+// document.createElement('')
+
+let newP = document.createElement('p');
+console.dir(newP);
+newP.innerText = "Hi, I'm a new paragraph. ";
+
+// append function use kore new element k document a visible kora hoy
+
+let body = document.querySelector('body');
+
+body.appendChild(newP); //last a add hobe(j object select korbo tar child hisebe add korbo)
+
+let btn = document.createElement('button');
+let btn1 = document.createElement('button');
+let btn2 = document.createElement('button');
+console.dir(btn);
+btn.innerText = "Click Me";
+btn1.innerText = "Don't Click Me";
+btn2.innerText = "Submit";
+let box = document.querySelector('.box1');
+box.appendChild(btn);
+
+
+newP.append("This is new text.");// New string add korte hole
+newP.prepend(btn1); // First a add kore 
+
+// insertAdjacentElement(position,element) (check MDN for the positions)
+
+let s = document.querySelector('p');
+
+// s.insertAdjacentElement("beforebegin",btn2);
+s.insertAdjacentElement("afterbegin",btn2);
+// s.insertAdjacentElement("beforeend",btn2);
+// s.insertAdjacentElement("afterend",btn2);
+
+
+
+// Removing element from page
+
+// body.removeChild(newP);//parent select kore then remove kora hoy
+// btn2.remove();//parent select kore then remove kora hoy
+
+
+
+
+
