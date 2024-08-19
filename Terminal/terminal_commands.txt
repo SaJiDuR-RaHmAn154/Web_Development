@@ -1,0 +1,82 @@
+-------Everything in this will work in terminal,Git Bash and VSCode terminal similarly--------
+
+-Terminal is a text input and output environment.
+-It is efficient way,saves time and give access to hidden files of a pc to the programmers
+
+-Command Line (windows centric texual command environment)
+-Terminal (mac ceentric)
+-Console (command line interface)
+-Shell (a programe runninng on terminal)
+-Bash
+-Z-cell(mac os er pre-installed shell)
+
+-For windows,We will use Git Bash to operate terminal commands
+
+-Directory==Folder
+-'~' (sign denotes home directory)
+- up,down keys are used to see previous and new commands respectively
+
+Commands
+---------
+(Basic):
+--------
+1. clear - clears the current terminal screen
+2. pwd (print working directory) - depicts current working directory
+3. ls (list files) - show all files of the current directory
+
+Navigation:(inside and outside directories)
+-----------
+1.cd folderName (change directory) - Kono directory er vitorer folder a jete chaile
+2.cd .. (back from the current directory) - .. denotes back button for terminal
+3.cd Tab-key (gives suggestion)
+4.cd Desktop/Cp(a whole directory) - it will direct you to that valid directory,if the file
+ doesn't exists,then command won't execute
+5.cd ../.. (2steps pisone chole asbe direct)
+  similary jotobar .. dibo toto step pisone asbe
+
+
+-Paths-(Relative,Absolute)
+-Relative path name diye suru hoy(Depends on current working directory)(cd Desktop/Cp)
+-Absolute path '/' diye suru hoy (cd /c/Users/ASUS/Desktop/Cp)
+
+- cd '/' = root directoy
+- cd '~' = home directory
+
+Making Directories:
+-------------------
+1. mkdir = make directory(Creates folder)
+   mkdir folderName - (to create new folder)
+   Ex- mkdir Desktop/NewDir/Hello (Using relative path)
+       mkdir /c/Users/ASUS/Desktop/NewDir/Hello/abc (using absolute path)
+
+
+Flags: are characters that we pass with the commands to modify their behaviour
+------
+Manual Command: (Provides the working manual of a command)
+---------------
+man ls
+man mkdir
+
+-l,-p,-a etc are flags used with commands
+
+N.B: man command is not working for Git Bash.So, use ls/mkdir --help instead or Normal Terminal
+---- press 'Q' to leave the manual screen.
+
+ls -a (shows hidden files in home directory)
+ls -l (shows informations with folders)
+
+Touch Command: (used to create files in a directory)
+--------------
+check-  (touch --help) for more information
+
+1. touch fileName (at first cd to that directory.Then create file)
+
+Delete Files and Folder: (deleted files will be removed permanently.Won't store in recycle bin)
+------------------------
+rm - remove files (rm fileName)
+rmdir - remove empty folders(Empty thakte hobe directory)
+rm-rf - remove any folders (folder er vitore file thakleo sob delete hoye jabe)
+
+rf - refers to recursive force (rf duita flag aksathe use hoise)
+
+
