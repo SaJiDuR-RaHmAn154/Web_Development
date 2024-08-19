@@ -1,0 +1,15 @@
+div {
+  height: 200px;
+  width: 400px;
+  background-color: aqua;
+  margin: 10px auto;
+  background-image: url(nature.jpg);
+  /* background-size: (contain/cover/auto)*/
+  /* Contain a repeat hobe */
+  /* Cover a crop hoye fill hobe */
+  /* auto te stretch hoye fill hobe */
+
+  /* maximum time cover use korbo */
+  background-size: cover;
+  color: white;
+}

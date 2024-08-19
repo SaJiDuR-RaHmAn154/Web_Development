@@ -1,0 +1,19 @@
+/* style2 last updated version.So,atai apply hobe cascading algorithm onujayi. */
+h1 {
+  background-color: aqua;
+}
+
+/* Specificity(Importance of selectors) */
+/* id>class,pseudoclass,atrribute>element,pseudoelement */
+/* priority jetar beshi hobe seta apply hobe finally */
+
+/*
+1. inline style>id>class>element
+2.more selectors priority > less selectors
+3. If specificity same -> Cascading onujayi last er ta apply hobe 
+So,inline style avoid kora hoy
+*/
+/* height,width,border (Parent theke inherit hoyna) */
+/* Color Pallete
+canva,colorspace,coolers(website) to generate good colors with hexcodes
+ */

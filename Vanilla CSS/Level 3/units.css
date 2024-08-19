@@ -1,0 +1,18 @@
+h1{
+    border: 2px solid black;
+    /* Whole screen er 1/3 occupy korbe as h1 takes the size of whole screen */
+    width: 33.33%;
+}
+#outer{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    margin: 50px;
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    /* Akhetre child div er margin parent div er respect a fixed hobe */
+    margin-left: 10%;
+}

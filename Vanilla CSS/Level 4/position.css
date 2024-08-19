@@ -1,0 +1,43 @@
+div {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  text-align: center;
+  border: 3px solid black;
+  margin: 20px;
+  display: inline-block;
+}
+
+#static {
+  background-color: yellow;
+  position: static;
+  /* top,left agula shifting kaj korbena static a */
+  top: 100px;
+  left: 100px;
+}
+
+#relative {
+  background-color: yellow;
+  position: relative;
+  /* Left and top theke 100px shift korbe */
+  top: 100px;
+  left: 100px;
+}
+
+#absolute {
+  background-color: yellow;
+  position: absolute;
+  /* parent er respect a shift hobe */
+  /* parent section tag a kono position mention nai So,main page or document er respect a top,left shift kaj korbe */
+  /* 3rd div 2nd div er jaygay asbe absolute er khetre */
+  top: 100px;
+  left: 100px;
+}
+
+#fixed {
+  background-color: yellow;
+  position: fixed;
+  /* Scroll korle fixed block screen a hang kore thakbe */
+  top: 100px;
+  left: 100px;
+}

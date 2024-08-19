@@ -1,0 +1,45 @@
+h1 {
+  background-color: yellow;
+  border: 2px solid black;
+}
+
+/* @media(width:400px){
+    h1{
+        background-color: red;
+        color: white;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+} */
+
+/* Maxmimum time used */
+/* Override*/
+/* 700px or tar upor ai change hobe */
+@media (min-width: 700px) {
+  h1 {
+    background-color: greenyellow;
+  }
+}
+/* 200px ba tar niche ai change hobe */
+@media (max-width: 200px) {
+  h1 {
+    background-color: pink;
+  }
+}
+/* 200px to 300px aqua hobe */
+@media (min-width: 200px) and (max-width: 300px) {
+  h1 {
+    background-color: aqua;
+  }
+}
+
+/* Orientation(potrait,landscape in phone) */
+@media (orientation: landscape) {
+  h1 {
+    background-color: brown;
+    color: blue;
+  }
+}

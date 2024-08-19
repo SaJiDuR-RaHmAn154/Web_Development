@@ -1,0 +1,35 @@
+.face {
+  width: 400px;
+  height: 400px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+.mouth {
+  height: 75px;
+  width: 200px;
+  background-color: brown;
+  border-radius: 0px 0px 50px 50px;
+  position: absolute;
+  top: 250px;
+  left: 100px;
+}
+
+.left-eye,
+.right-eye {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  /* Document er respect a placement hobe.Then baki kaj korbo */
+  position: absolute;
+}
+
+.left-eye {
+  top: 100px;
+  left:100px;
+}
+.right-eye {
+  top: 100px;
+  left: 250px;
+}

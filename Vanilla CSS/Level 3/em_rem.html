@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="em_rem.css" />
+  </head>
+  <body>
+    <!-- em -> parent or itself er font-size er respect a properties set korte use hoy-->
+    <!-- Disadvantage of em is snowballing effect(nested obosthay size barte thake joto inside a jaoa jay) -->
+    <div id="outer">
+      This is outer
+      <div id="inner">This is inner</div>
+    </div>
+
+    <button>click me</button>
+
+    <!-- rem(root em) (font size root element er sapekkhe set hobe) -->
+    <section>Section</section>
+    <div>
+      div1
+      <div>
+        div2
+        <div>div3</div>
+      </div>
+    </div>
+  </body>
+</html>

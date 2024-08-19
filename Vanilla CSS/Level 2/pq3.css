@@ -1,0 +1,16 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color:#1b74e4;
+    font-size: bold;
+}
+#search{
+    color:white;
+    background-color: black;
+}
+.select{
+    color: black;
+    background-color: aqua;
+}

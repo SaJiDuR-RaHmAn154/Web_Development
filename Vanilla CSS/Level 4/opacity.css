@@ -1,0 +1,12 @@
+div {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(251, 255, 0, 0.825);
+}
+/* Alpha channel just color manipulate korbe.Baki content element unchanged thakbe */
+/* But opacity element manipulate kore.So 0 dile sob invinsible hoye jabe */
+#opacity {
+  background-color: royalblue;
+  opacity: 0.5;
+}
+

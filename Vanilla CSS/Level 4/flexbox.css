@@ -1,0 +1,111 @@
+/* flex-direction:(row,column,row-reverse,column-reverse) */
+/* It controls the direction of alignment of flex elements */
+/* row(main axis-> left to right) */
+/* row-reverse(main axis->right to left) */
+/* column-reverse(main axis->bottom to top) */
+
+/* Justify-content(is used to maintain the space bewteen the flex elements in the flexbox) */
+/* Acts along main axis */
+/* flex-start(main axis er starting point theke element align suru hobe)*/
+/* flex-end(main axis er ending point theke alignment suru hobe) */
+/* center (main axis er mid borabor align hobe) */
+/* space-between->extra space evenly divide hoye jabe element gulor majhe */
+/* space-around->edge space middle space er half hobe */
+/* space-evenly(soman space dibe sob guloy) */
+
+/* Flex wrap( sets whether items are forces onto one line or can wrap onto multiple lines) */
+/* flex-wrap (nowrap,wrap,wrap-reverse) */
+
+/* Align items (distribute items along cross axis) */
+
+/* Align content acts like justify content but difference is that it performs everything in cross axis */
+
+/* Align Self (Aligns an individal item along the cross axis) */
+
+/* Flex Sizing ( Extra space er sapekkhe element er size increase or shrink kora hoy ) */
+/*flex-basis:100px;(sets the initial main size of a flex item) */
+
+#container {
+  height: 300px;
+  width: 80%;
+  background-color: azure;
+  margin: 10px auto;
+  border: 2px solid black;
+  /* All overflown divs fit in the container */
+  display: flex; /*row(flex direction by default)*/
+
+  flex-direction: row;
+  /* flex-direction: column-reverse; */
+  justify-content: flex-start;
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  /* By default nowrap ai thake */
+  /* flex-wrap: nowrap; */
+  /* content main axis er across a wrap hoye jabe*/
+  /* flex-wrap: wrap; */
+  /* content cross axis er across a wrap hoye jabe*/
+  /* flex-wrap: wrap-reverse; */
+
+  /* Cross axis->top to bottom */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* (flex box er inside a kisu lekha thakle seta same line borabor chole asbe) */
+  /* align-items: baseline; */
+
+  /* Cross axis->top to bottom */
+  align-content: flex-start;
+  /* align-content:flex-end ; */
+  /* align-content:center ; */
+  /* align-content:space-between ; */
+  /* align-content:space-around ; */
+  /* align-content: space-evenly; */
+  /* align-content:baseline ; */
+}
+
+#org {
+  /* align self is for individual item but acts like align items and it has higher priority than other align */
+  /* Acts along main axis */
+  /* align-self:flex-start ; */
+  /* align-self:flex-end; */
+  /* align-self:baseline; */
+  align-self: center;
+  /* extra space thakle flex grow diye toto times multiply hobe size oi item er */
+  flex-grow: 2;
+  /* flex-shrink: 2; */
+
+  /* Flex Sizing(along the main axis for individual element)*/
+  /* flex-basis: 50px; */
+}
+
+#blu {
+  /* flex-basis: 400px; */
+  /* flex-grow: 2; */
+  flex: 2;
+  /* max-width diye boundary limit kore deya jay */
+  max-width: 400px;
+  min-width: 100px;
+}
+h1 {
+  text-align: center;
+}
+
+#container div {
+  /* Height Width ignore hoye jabe akhetre flex display korar jonno */
+  height: 100px;
+  width: 100px;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* Flex Shorthand */
+
+/* 1. flex-grow | flex-shrink | flex-basis (flex: 2 2 100px) */
+/* 2.flex-grow | flex-basis */
+/* 3.flex-grow(unitless) */
+/* 4.flex-basis */

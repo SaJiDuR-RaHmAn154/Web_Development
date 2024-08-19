@@ -1,0 +1,12 @@
+/* Inline Block */
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  border: 2px solid black;
+  margin: 6px;
+  /* Block element gulor style o thaklo and single line ao holo */
+  display: inline-block;
+}
+/* display:none(screen theke invincible hoye jabe) */

@@ -1,0 +1,39 @@
+div {
+  /* Content area er height,width set kora hoy not div er height,width */
+  /* Border content er deya hoyna.Box er deya hoy */
+  height: 200px;
+  width: 500px;
+  background-color: yellow;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  /* Various shaped borders */
+  border-radius: 15px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  /* border-radius: 50%; */
+
+  /* Margin duita box er majher distance control kore(border er bahirer area) */
+  margin: 25px 20px 25px 20px;
+}
+h1 {
+  /*Border  Shorthand */
+  border: 2px dashed green;
+  border-left: solid blue;
+  border-top: dotted yellow;
+  border-top-right-radius: 20px;
+  /* Heading element k akta default margin deya hoy.Seta sorate margin:0 */
+  margin: 0;
+}
+button {
+  border: 2px solid black;
+  border-radius: 10px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
+  /* order- top right bottom left (clockwise)*/
+  padding: 5px 25px 5px 25px;
+  background-color: red;
+}
+

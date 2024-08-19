@@ -1,0 +1,66 @@
+.box {
+  height: 100px;
+  width: 300px;
+  background-color: pink;
+  /* Animation Terms */
+
+  /* animation-name: fontAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+
+  /* animation-name: colorAnimate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: normal; */
+
+  /* animation-name: widthAnimate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: normal; */
+
+  /* Shorthand(animation likhlei general syntax suggest korbe vscode) */
+  animation: Animate 3s ease-in-out 0s infinite normal;
+}
+/* Multiple things change korte hole aksathe from and to te mention korte hobe */
+@keyframes Animate {
+  0% {
+    width: 10px;
+    background-color: green;
+  }
+  50%{
+    width: 400px;
+    background-color: blue;
+    border:2px solid black;
+  }
+  100%{
+    width: 100px;
+    background-color: red;
+    border:2px solid orange;
+    border-radius: 100px;
+  }
+}
+@keyframes fontAnimation {
+  /* Bleuprint of Animation */
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 40px;
+  }
+}
+
+@keyframes colorAnimate {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: blue;
+  }
+}

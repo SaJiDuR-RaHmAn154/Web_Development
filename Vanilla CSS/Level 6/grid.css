@@ -1,0 +1,76 @@
+.container {
+  width: 600px;
+  height: 300px;
+  background-color: yellow;
+  /* Will act like a block item */
+  display: grid;
+  /* This will act like a inline item */
+  /* display: inline-grid; */
+
+  
+  /* Creating tracks(Inspect the webpage for visualization) */
+  /* grid-template-rows: 50px 50px 50px 50px 50px;
+  grid-template-columns: 100px 100px 100px 100px; */
+  /* Auto dile evenly space distribute kore nibe */
+  /* grid-template-columns: auto auto auto; */
+
+  /* Auto er cheye better way to distribute evenly */
+  /* syntax- grid-template-row: repeat(count,1fr) , 1fr - 1 fraction of 100% width */
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  /* Grid gap(equal amount of gap between rows,columns also known as item gaps) */
+  /* row-gap: 10px;
+  column-gap: 10px; */
+  /* Shorthand: grid-gap: row-gap column-gap */
+  grid-gap: 10px 10px;
+
+  /* Horizontal Alignment (Justify Items for all items together) */
+  /* justify-items: start; */
+  /* justify-items: end; */
+  /* justify-items: center; */
+
+  /* align-items(used to align items vertically) */
+  /* align-items: start; */
+  /* align-items: end; */
+  /* align-items: center; */
+
+  /* This is used to control both vertically and horizontally */
+  /* place-items: center; */
+}
+.item {
+  width: 100px;
+  height: 50px;
+  background-color: greenyellow;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#one {
+  /* Individual item k place korar khetre justify-self use korbo */
+  justify-self: center;
+  /* align-self for individual item for vertical placement */
+  align-self: center;
+
+  /* We can merge them like this */
+  /* place-self: end; */
+}
+
+/* #one {
+  grid-column-start sets the starting and ending point of first element 
+  1st box er height width thik ai thakbe but space occupied thakbe
+  grid-column-start: 1;
+  grid-column-end: 3;
+  Similar approach(1 to 3 line porjonto occupy korbe)
+  grid-column: 1/ 3;
+  grid-column: 1/span 3;
+} */
+
+/* #two {
+  Starting and ending row of first element is defined here
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-row:1/4; 
+  Occupies 3 rows
+  grid-row: 1/span 3;
+} */

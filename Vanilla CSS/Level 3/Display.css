@@ -1,0 +1,31 @@
+/* Now h2 will act like an inline element */
+/* h2{
+    display: inline;
+    background-color: aqua;
+}
+span{
+    display: block;
+    background-color: yellowgreen;
+} */
+
+span {
+  background-color: green;
+  border: 2px solid black;
+  /* Height and width kaj kortise na */
+  height: 100px;
+  width: 200px;
+  /* Padding,margin inline element er jonno left and right a add hoy just */
+  padding: 50px;
+  margin: 50px;
+}
+div {
+    /* block element er khetre thik vabe kaj kortise */
+    background-color: green;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 50px;
+}
+
+

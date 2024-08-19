@@ -1,0 +1,134 @@
+/* Universal Selector(Whole document a apply hobe) */
+* {
+  font-family: cascadia code;
+  /* background-color: yellow; */
+}
+h3{
+    background-color: red !important;
+    /* Ai color r konovabe change hobena */
+}
+/* Element Selector */
+h1,
+h3 {
+  color: #b92b27;
+}
+/* ID selector (syntax- #myid{}) */
+#login {
+  color: blue;
+  background-color: white;
+}
+#signup {
+  color: white;
+  background-color: red;
+}
+/* Class selector(syntax- .myclass{}) all elements having same class will be affected*/
+.upvote {
+  color: red;
+  background-color: aqua;
+}
+
+/* Descendant Selectors(syntax- div p{property:value;} */
+/* paragraph er vitorer anchor tag a apply kora hosse */
+.follow a {
+  color: red;
+  background-color: green;
+}
+
+nav ul li a {
+  color: red;
+}
+
+/* Adjacent sibling combinator(syntax- p+h3{property:value;}) */
+/* p+h3 means p er immidiate pore j h3 asbe setate apply hobe */
+
+p + h3 {
+  text-decoration: blue dashed underline;
+}
+.upvote + button {
+  color: red;
+  background-color: yellow;
+}
+
+/* Child combinator(Syntax- span>button{property:value;}) */
+/* Immediate child a applicable (Direct descendants) */
+/* Descendant selector er khetre vitorer jekono child a applicable */
+div > input {
+  background-color: darksalmon;
+}
+
+/* Attribute Selector */
+/* Name type korle red color a type hobe */
+input[type="text"] {
+  color: red;
+}
+/* Password type korle green color a type hobe */
+input[type="password"] {
+  color: green;
+}
+input[type] {
+  background-color: ghostwhite;
+}
+
+/* PQ4 */
+#myid p {
+  color: green;
+}
+/* or */
+
+/* div[id="myid"] p{
+    color: green;
+} */
+
+/* Pseudoclass(syntax- element:pseudoclass) */
+/* hover,active,checked,nth-of-type */
+/* Element er state er basis a select kora */
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* specificity(priority of applying effects) */
+/* Id,signup change hossena karon id er dara set kora ase(id er speficity high) */
+h3:hover {
+  text-decoration: none;
+}
+
+/* Active-Button click */
+button:active {
+  background-color: red;
+  color: black;
+}
+p:active {
+  font-weight: bold;
+  color: green;
+}
+
+input[type="radio"]:checked + label {
+  color: red;
+  font-weight: bold;
+}
+
+/* n-th of type */
+/* div:nth-of-type(2) { */
+/* Even div er color change hobe */
+div:nth-of-type(2n) {
+    background-color: yellow;
+}
+/* Odd div er color change hobe */
+/* div:nth-of-type(2n+1) {
+  background-color: green;
+} */
+
+/* Pseudoelements(first-letter,first-line,selection) */
+
+h1::first-letter{
+    color: black;
+}
+p::first-line{
+    color: red;
+}
+/* Selected part er color change korbe */
+p::selection{
+    background-color: red;
+}

@@ -1,0 +1,23 @@
+h1{
+    /* color changes the foreground color */
+    /* Color direct using name */
+    /* color: blue; */ 
+
+    /* Color using hexcode */
+    /* color:#ff0000; */
+
+    /*Color using rgb(x,y,z) values */
+    /* Color picker(google) */
+    color:rgb(255,255,0);
+    background-color: grey;
+    
+}
+p{
+    color: red;
+    background-color: cornflowerblue;
+}
+button{
+    color: gold;
+    /* Background onek property er jonno use hoy tai bg color ai use kora preferable */
+    background: black;
+}

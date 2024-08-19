@@ -1,0 +1,21 @@
+.box {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  background-color: pink;
+}
+/* By default z-index:0 or auto*/
+/* element er position static or default bade onno thaklei z-index diye samone pisone display kora jay element k */
+.one {
+  background-color: aquamarine;
+  position: relative;
+  z-index: 1;
+}
+
+.two {
+  background-color: darksalmon;
+  position: relative;
+  bottom: 50px;
+  /* z-index: -1; */
+  z-index: 2;
+}

@@ -1,0 +1,42 @@
+h1 {
+  /* text-align: right; */
+  /* Text align parent element er relative a hoy(parent element er width er relative a) */
+  /* Akhane h1 er width er 50% er sapekkhe right align hobe */
+  /* border: solid;
+    width: 50%; */
+
+  text-align: center;
+  text-decoration:blue wavy underline;
+  letter-spacing: 10px;
+  font-size: 50px;
+  /* cssfontstack.com */
+  font-family: arial;
+}
+h2{
+    font-weight: 900;
+    text-decoration: double overline;
+    font-family: fantasy;
+}
+h3 {
+    /* end equivalent to right */
+    text-align: end;
+    text-decoration: green dashed line-through;
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+}
+p {
+  /* left and right boundary fixed */
+  text-align: justify;
+  font-weight: normal;
+  /* line-height:2.5 means 2.5*Normal */
+  /* line-height: .5; */
+  line-height: 2.5;
+  letter-spacing: 2px;
+  font-size: 17px;
+  font-family: cascadia code,sans-serif,arial;
+}
+a{
+    color:red;
+    background-color: yellow;
+    /* No underline in anchor element */
+    text-decoration: none;
+}
