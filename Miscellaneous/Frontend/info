@@ -1,0 +1,11 @@
+- OOP in JS
+
+---Prototype (built-in properties of an object)
+
+- array is an object in js
+-array console a print korle setar vitore prototype er under a onek function defined thakbe(built-in functions)
+
+- to redefine any functions in the prototype object, we can use _proto_
+- arr._proto_(to access the reference or copy of prototype object)
+- arr.prototype (to access the actual object)
+-String.prototype

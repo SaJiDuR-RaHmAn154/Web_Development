@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get and Post Requests</title>
+  </head>
+  <body>
+    <!-- get request er drawback holo er response url a show hoy and boro response hole url size limitations er karone jhamela hobe -->
+    <!-- password o url a show hobe -->
+    <!-- get request er data sent kora hoy seta string hisebe use hobe -->
+     <!-- Kono response neyar jonno get request use kora hoy for better development purpose -->
+    <h2>GET Request Form</h2>
+    <form method="get" action="http://localhost:8080/register">
+      <input placeholder="enter username" name="user" type="text" />
+      <input placeholder="enter password" name="password" type="password" />
+      <button>Submit</button>
+    </form>
+
+    <!-- post request a data jabe but url a show hobena(secured way) -->
+    <!-- post request dara backend a data upload,update,write korte use hoy -->
+
+    <h2>POST Request Form</h2>
+    <form method="post" action="http://localhost:8080/register">
+      <input placeholder="enter username" name="user" type="text" />
+      <input placeholder="enter password" name="password" type="password" />
+      <button>Submit</button>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>

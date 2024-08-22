@@ -1,0 +1,24 @@
+- REST is am architechtural style that defines a set of constraints(some defined rules) to be used for creating web services
+
+- CRUD operations(DB er) handle korte REST APIs use kora hoy
+
+-CRUD(Create,Read,Update,Delete)
+
+- Check Twitter API
+
+--Blog(https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/) -For better understanding
+
+-Use nouns instead of verbs in endpoint paths
+
+-----CRUD Operation----
+-GET (retrieving resources)
+-POST(submitting new data to server)
+-PUT (to update existing data)
+-PATCH (to update existing data partially)
+-DELETE (to remove data)
+
+-Resources refers to something on which we are gonna perform CRUD operation
+
+<!-- npm install uuid  -->
+
+- this package generates unique id
