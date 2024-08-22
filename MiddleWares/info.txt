@@ -1,0 +1,26 @@
+- Request (middlewares) Response
+-It's an intermediary
+- They are functions that come into play some task after the server receives the request and before the response is sent to the client
+https://expressjs.com/en/guide/using-middleware.html
+
+--Important Middlewares
+-cookie-parser middleware(self-study from that documentation)
+-Helmet
+-Morgan
+-cors
+
+ex - 
+1. methodOverride (DELETE,PUT method)
+2. bodyParser (req.body parsing)
+3. express.static
+4. express.urlencoded (request er vitorer data access)
+
+app.use(express.urlencoded({extended:true}));
+app.use(express.static(path.join(__dirname,"/public)));
+
+Proprties:
+
+1. Request,response sob kisu access korte pare
+2. middlewares er vitore chaining thakte pare(subsequent middleware functions)
+3. can send a response to stop any function in chaining (can end request-response cycle)
+4. can execute any code
