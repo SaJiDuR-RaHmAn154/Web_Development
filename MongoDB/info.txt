@@ -1,0 +1,54 @@
+- MongoShell like node,python shell
+- mongosh (used to start mongoshell)
+- test (temporary database create kore dey new shell khulle-memory te stored thakena)
+
+----Commands (in camel case)-----
+
+- help command(all command list)
+- show dbs(shows all databases)
+- exit,quit ->to exit shell
+- cls (to clean the screen)
+- use databaseName (to switch to that db)
+- db (to show the current Database)
+- show collections (shows current collections)
+
+- db.student.insertOne({name:"Sajid",age:23,marks:88}) -Inserted one document in the student collection
+- db.student.find() (shows all the stored data in student collection)
+- db.student.insertMany([{name:"Steve",age:22,city:"Dhaka"},{name:"Donald",age:25,city:"Rajshahi"}]) (Inserting multiple data)
+- db.student.findOne({city:"Rajshahi",age:23}) (condition o key-value pair hisebe dite hobe - Multiple conditions can be sent also)
+
+- db.student.deleteOne({city:"Rajshahi"}) (deleted first item)
+-db.student.deleteMany({marks:{$lt: 75}}) (less than 75 marks)
+-db.student.deleteMany({}) (All documents will be deleted)
+- db.dropDatabase()
+-db.student.find({$or:[{marks:{$gte:88}},{city:"Rajshahi"}]})
+- db.student.updateOne({name:"Steve"},{$set:{marks:92}})
+-db.student.updateMany({city:"Dhaka"},{$set:{city:"Old Dhaka"}})
+
+-db.student.replaceOne(filter(condition),new Data)
+----nesting----
+-db.student.insertOne({name:"sarah",performance:{marks:90,grade:"A+"}})
+-db.student.find({"performance.marks":90})
+
+
+
+
+---------------------------------------------
+-check update() operation from documentation
+
+- find() er vitorer operator Documentation theke dekhe nibo
+- find() -> returns a cursor (reference or copy of actual object)
+- findOne() ->returns the actual document
+- insertedID jeta dibe seta primary key
+- Check MongoDB documentation CRUD section
+
+- MongoShell internally JS command recognize korte pare. So, JS command o kaj korbe
+- use diye kono DB create korle setao temporary hobe jotokhon na setate data entry kora hosse
+
+- MongoDB te data store hoy BSON format a (BSON data is known as document)
+- Document contains key-value pairs like JS object
+- Documents are stored inside collection
+- BSON data space efficient and binary format based
+- JSON text based and space inefficient
+- check MongoDB JSON and BSON article
+- MongoDB te data insert korar somoy Schema age define korte hoyna. Jekono key-value pair use kora jabe

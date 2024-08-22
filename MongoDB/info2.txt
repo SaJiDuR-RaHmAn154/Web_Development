@@ -1,0 +1,11 @@
+------mongoose-----
+
+-A library that creates a connection between MongoDB and node.js JS runtime environment
+- It's an ODM(object data modeling) library
+
+-https://mongoosejs.com/
+
+
+-Shema define the shape or blueprint of a DB
+- In mongo, table==collection and row == document
+- https://mongoosejs.com/docs/guide.html (for schema)
