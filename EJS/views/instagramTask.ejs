@@ -1,0 +1,27 @@
+<!-- here we used include method to include portion of code from another file -->
+ <!-- here elements inside this tag will be treated as html code not string -->
+  
+<%-include("includes/head.ejs")%>
+  <p>
+    <!-- http://localhost:8080/dogs -->
+    <!-- http://localhost:8080/cats -->
+    <h2>This page belongs to <%=data.name%></h2>
+    <button>Follow me</button>
+    <button>Poke</button>
+
+    <p>Followers: <%=data.followers%>&nbsp;&nbsp;&nbsp;&nbsp;
+         Followings: <%=data.following%></p>
+        <hr>
+
+        <%for(let post of data.posts){%>
+            <img src="<%=post.image%>" alt="some img">
+            <p>
+                Likes : <%= post.likes%>&nbsp;&nbsp;&nbsp;&nbsp;
+                Comments: <%= post.comments%>
+            </p>
+        <%}%>
+        <script src="/app.js"></script>
+  </body>
+</html>
+
+
