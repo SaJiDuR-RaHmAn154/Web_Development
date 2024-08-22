@@ -1,0 +1,17 @@
+ -Express is a large package of npm and it's a framework
+ -Library is pre-written code for performing specific task(small purpose)
+ -Framework is pre-written code for developing web applications (larger purpose)
+ -Library and Framework quite similar
+ 
+ -Client(Frontend) sends request to Server side and Server generates response 
+ -Express is a server side programming language
+ -node.js is the runtime environment for writting JS
+
+ -Express Tasks:
+ 1.Listening request
+ 2.Parse request(when request is sent,it is in text format.But express parse this text request to an Object(JSON) format that can be understood by JS)
+ 3.Match response with routes(urls)
+ 4.Generates suitable response and sends
+
+
+ -Port(Logical endpoints that is used to exchange information between server and client)
